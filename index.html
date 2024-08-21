@@ -21,11 +21,12 @@
 
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <header>
       <div class="header-section container">
-        <a href="#">
+        <a href="#" class="logo">
           <img src="./images/logo.svg" alt="logo" />
         </a>
         <nav class="desktop-nav">
@@ -41,8 +42,8 @@
             </li>
           </ul>
           <div class="call-to-actions">
-            <a href="#">Login</a>
-            <a href="#">Sign Up</a>
+            <a href="#" class="btn btn-secondary">Login</a>
+            <a href="#" class="btn btn-primary">Sign Up</a>
           </div>
         </nav>
         <nav class="mobile-nav">
@@ -52,31 +53,81 @@
       </div>
     </header>
     <main>
-      <section class="section-hero container">
-        <div class="section-hero__info">
-          <h1>More than just shorter links</h1>
-          <p>
-            Build your brand’s recognition and get detailed insights on how your
-            links are performing.
-          </p>
-          <a href="#">Get Started</a>
+      <section class="container">
+        <div class="section-hero">
+          <div class="section-hero__info">
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <a href="#" class="btn-primary btn-lg">Get Started</a>
+          </div>
+          <div class="section-hero__illustration">
+            <img src="./images/illustration-working.svg" alt="" />
+          </div>
         </div>
-        <div class="section-hero__illustration">
-          <img src="./images/illustration-working.svg" alt="" />
+
+        <form class="shortener">
+          <input
+            type="text"
+            placeholder="Shorten a link here..."
+            name=""
+            id=""
+          />
+          <button class="btn-primary" type="button">Shorten it</button>
+        </form>
+      </section>
+      <section class="section-statistics">
+        <div class="section-header">
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </div>
+        <div class="stats container">
+          <div class="stat-card__container">
+            <div class="stat-line"></div>
+            <div class="stat-card card-1">
+              <div class="stat-card__img">
+                <img src="./images/icon-brand-recognition.svg" alt="" />
+              </div>
+              <h3>Brand Recognition</h3>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <div class="stat-card card-2">
+              <div class="stat-card__img">
+                <img src="./images/icon-detailed-records.svg" alt="" />
+              </div>
+              <h3>Detailed Records</h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="stat-card card-3">
+              <div class="stat-card__img">
+                <img src="./images/icon-fully-customizable.svg" alt="" />
+              </div>
+              <h3>Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!--
-     Shorten a link here... Shorten It! Advanced
-    Statistics Track how your links are performing across the web with our
-    advanced statistics dashboard. Brand Recognition Boost your brand
-    recognition with each click. Generic links don’t mean a thing. Branded links
-    help instil confidence in your content. Detailed Records Gain insights into
-    who is clicking your links. Knowing when and where people engage with your
-    content helps inform better decisions. Fully Customizable Improve brand
-    awareness and content discoverability through customizable links,
-    supercharging audience engagement. Boost your links today Get Started
+   Boost your links today Get Started
     Features Link Shortening Branded Links Analytics Resources Blog Developers
     Support Company About Our Team Careers Contact
     -->

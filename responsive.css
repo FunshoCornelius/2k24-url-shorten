@@ -1,0 +1,126 @@
+/* Medium screens (md) */
+@media (min-width: 840px) {
+  .header-section {
+    justify-content: start;
+    align-items: center;
+    gap: 4rem;
+    .mobile-nav {
+      display: none;
+    }
+
+    .desktop-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+      ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .call-to-actions {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+  }
+
+  .section-hero {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    margin-top: 6rem;
+
+    .section-hero__illustration {
+      width: 150%;
+    }
+
+    .section-hero__info {
+      flex-basis: 100%;
+      h1 {
+        font-size: 5.4rem;
+      }
+    }
+  }
+
+  form {
+    background: url("./images/bg-shorten-desktop.svg");
+    background-color: var(--Dark-Violet);
+    flex-direction: row;
+  }
+
+  .section-header {
+    width: 50%;
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+
+  .section-statistics {
+    .stats {
+      .stat-card__container {
+        flex-direction: row;
+        gap: 5rem;
+
+        .stat-line {
+          transform: rotate(0deg);
+        }
+
+        .stat-card {
+          text-align: left;
+
+          .stat-card__img {
+            left: 0;
+            transform: translate(50%, -50%);
+          }
+        }
+
+        .card-1 {
+          transform: translate(0, -10%);
+        }
+        .card-3 {
+          transform: translate(0, 10%);
+        }
+      }
+    }
+  }
+}
+
+/* Large Screens (lg) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1080px;
+  }
+  .section-hero {
+    overflow: visible;
+
+    .section-hero__info {
+      h1 {
+        font-size: 5.4rem;
+      }
+    }
+  }
+
+  .section-header {
+    h2 {
+      font-size: 4.2rem;
+    }
+  }
+}
+
+/* Extra large screens (xl) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .section-hero {
+    .section-hero__info {
+      h1 {
+        font-size: 6.8rem;
+      }
+    }
+  }
+}
